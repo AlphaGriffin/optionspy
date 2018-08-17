@@ -14,10 +14,11 @@ Options for Python.
 Introduction
 ************
 
-**FIXME**
+This options class converts an easy to read YAML file into a python object.
+Just add a config.yaml in the root directory, or point to the configuration file in the constructor.
 
-
-
+General Use:
+    Managing of mulitple sets of API keys, across multiple sites with easy.
 **************
 Python Library
 **************
@@ -95,7 +96,9 @@ Examples
 
 A simple Example usage::
 
-    FIXME
+    from ag.options import Options
+    config = Options()
+    email_addr = config.email_addr
 
 
 
@@ -106,4 +109,3 @@ History
 All changes are tracked in the `CHANGELOG <CHANGELOG>`_ file.
 
 .. include:: CHANGELOG
-
