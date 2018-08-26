@@ -13,7 +13,7 @@ Options for Python.
 import os, subprocess, shlex, platform, datetime
 
 from .__version__ import __version__
-print ("Alpha Griffin Python Options version %s" % (__version__))
+# print ("Alpha Griffin Python Options version %s" % (__version__))
 
 #import ag.logging as log
 #log.set(log.INFO)
