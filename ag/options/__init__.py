@@ -40,9 +40,12 @@ class Options(object):
                 )
         self.config = self.load_options(data_path)
         for i in self.config:
-            setattr(self, '{}'.format(i),
-                    '{}'.format(self.config[i])
-                    )
+            setattr(
+                self,
+                '{}'.format(i),
+                # '{}'.format(self.config[i])
+                self.config[i]
+            )
 
     def __call__(self):
         """Sanity check."""

@@ -31,6 +31,7 @@ NAME    = 'options'                     # should match source package name in NS
 COMMAND = 'optionspy'                   # command name may be different than package name
 REQUIRE = [                             # package dependencies
             #'ag.logging',
+            'pyyaml'
           ]
 
 DESC    = 'Options for Python'
@@ -134,4 +135,3 @@ if __name__ == '__main__':
         entry_points={
         },
     )
-
