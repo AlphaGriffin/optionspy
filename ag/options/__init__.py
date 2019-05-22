@@ -65,5 +65,5 @@ class Options(object):
     def load_options(data_path):
         """Open and read yaml file just like any other."""
         with open(data_path, 'r') as config:
-            new_config = yaml.load(config)
+            new_config = yaml.load(config, Loader=yaml.FullLoader)
         return new_config
